@@ -163,7 +163,9 @@ body {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 48px;
-  width: 496px;
+  max-width: 496px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .hero-btn {
@@ -175,7 +177,11 @@ body {
   min-width: 169px;
   min-height: 56px;
   background: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .hero-btn:hover,
@@ -199,8 +205,13 @@ body {
   padding-bottom: 120px;
 }
 
-.advantages-title {
+/* .advantages-title {
   visibility: hidden;
+} */
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
 }
 
 .advantages-list {
@@ -248,7 +259,7 @@ body {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .product-list {
@@ -257,13 +268,7 @@ body {
 }
 
 .product-item {
-  box-sizing: border-box;
   width: 360px;
-  height: 300px;
-  border: 1px solid #e7e9fc;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 /* ---------------------TEAM---------------------- */
@@ -282,7 +287,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .team-list {
@@ -295,6 +300,7 @@ body {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  padding-bottom: 32px;
 }
 
 .photo-1 {
@@ -338,17 +344,14 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #434455;
-  padding-bottom: 32px;
 }
 
 /* ---------------------FOOTER---------------------- */
 
 .footer {
   background-color: var(--footer-background-color);
-  padding-top: 101.5px;
+  padding-top: 100px;
   padding-bottom: 100px;
-  width: 1440px;
-  margin: 0 auto;
 }
 
 .footer-logo {
@@ -356,11 +359,7 @@ body {
 }
 
 .footer-offer {
-  /* position: absolute; */
   width: 264px;
-  height: 72px;
-  left: 156px;
-  top: 2420px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -382,7 +381,7 @@ body {
   display: flex;
   gap: 24px;
   justify-content: center;
-  margin-top: 96px;
+  padding-top: 96px;
   margin-bottom: 72px;
 }
 
@@ -407,6 +406,7 @@ body {
 .section-button:focus {
   background-color: var(--brand-color);
   color: var(--background-color);
+  border: 0;
 }
 
 /* ---------------------CATEGORY---------------------- */
@@ -414,26 +414,25 @@ body {
 .category-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  row-gap: 48px;
+  column-gap: 24px;
 }
 
 .category-item {
   box-sizing: border-box;
   width: 360px;
-  height: 420px;
-  left: 924px;
-  top: 756px;
   background: #ffffff;
-  border: 1px solid #e7e9fc;
 }
 
 .category-link {
 }
 
 .photo {
-  width: 360px;
-  height: 300px;
-  margin-bottom: 32px;
+}
+
+.container-text {
+  padding: 32px 172px 32px 16px;
+  border: 1px solid #e7e9fc;
 }
 
 .category-name {
@@ -443,6 +442,7 @@ body {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
+  width: 290px;
 }
 
 .category-text {
@@ -451,5 +451,4 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  padding-bottom: 32px;
 }
